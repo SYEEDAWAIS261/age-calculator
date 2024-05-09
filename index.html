@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Age Calculator</title>
+	<link rel="stylesheet"
+		href="style.css" />
+</head>
+
+<body>
+	<div class="card">
+		<header>
+            <img src="./ageeeeee.png" alt="">
+            <!-- <h1>AGE CALCULATOR</h1> -->
+		</header>
+
+		<div>
+			<label>Enter your Date of Birth</label>
+
+			<input id="inputDob"
+				type="date"
+				value="2000-01-01" />
+		</div>
+		<br />
+
+		<!-- Take the date from which age is to be calculated -->
+		<div>
+			<label>Current Date</label><br>
+			<input id="cdate"
+				type="date"
+				value="" />
+		</div>
+		<br/>
+        <button onclick="getDOB()" class="btn">
+            <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+              <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+              <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+            </svg>
+            <span>Calculate</span>
+          </button>
+		<br />
+		<div id="currentAge"></div>
+		<script src="script.js"></script>
+	</div>
+</body>
+</html>
